@@ -1,6 +1,6 @@
 package com.codegym.controller;
 
-import com.codegym.service.IDictionary;
+import com.codegym.service.IDictionaryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class SimpleDictionary {
     @Autowired
-    private IDictionary iDictionary;
+    private IDictionaryService iDictionary;
 
     @GetMapping()
     public String home() {
