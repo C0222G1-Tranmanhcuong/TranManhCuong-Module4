@@ -36,7 +36,7 @@
                 <input type="text" name="english" value="${english}">
             </div>
             <br>
-            <label>Result: </label>
+            <label>TIẾNG VIỆT: </label>
             <label> ${result}</label>
             <div>
                 <br>
