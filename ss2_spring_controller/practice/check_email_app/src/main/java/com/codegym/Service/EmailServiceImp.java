@@ -1,4 +1,23 @@
 package com.codegym.Service;
 
-public class EmailServiceImp {
+import org.springframework.stereotype.Service;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+@Service
+public class EmailServiceImp implements IEmailService{
+    private static final String EMAIL_REGEX = "^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)$";
+    private static Pattern pattern;
+    private Matcher matcher;
+
+    @Override
+    public void emailController() {
+       pattern = Pattern.compile(EMAIL_REGEX);
+    }
+
+    @Override
+    public boolean validate(String regex) {
+         matcher = pattern.matcher(regex);
+         return matcher.matches();
+    }
 }
