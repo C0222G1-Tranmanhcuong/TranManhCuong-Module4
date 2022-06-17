@@ -13,25 +13,26 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class MedicalDeclarationController {
     @Autowired
     private IMedicalDeclarationService iMedicalDeclarationService;
+
     @GetMapping()
     public String hom(Model model) {
         model.addAttribute("medicalDeclaration", new MedicalDeclaration());
         model.addAttribute("listDayOfBirth", iMedicalDeclarationService.dayOfBirth());
         model.addAttribute("listGender", iMedicalDeclarationService.gender());
         model.addAttribute("listNationality", iMedicalDeclarationService.nationality());
-        model.addAttribute("startDay",iMedicalDeclarationService.startDay());
-        model.addAttribute("startMonth",iMedicalDeclarationService.startMonth());
-        model.addAttribute("startYear",iMedicalDeclarationService.startYear());
-        model.addAttribute("endDay",iMedicalDeclarationService.endDay());
-        model.addAttribute("endMonth",iMedicalDeclarationService.endMonth());
-        model.addAttribute("endYear",iMedicalDeclarationService.endYear());
+        model.addAttribute("startDay", iMedicalDeclarationService.startDay());
+        model.addAttribute("startMonth", iMedicalDeclarationService.startMonth());
+        model.addAttribute("startYear", iMedicalDeclarationService.startYear());
+        model.addAttribute("endDay", iMedicalDeclarationService.endDay());
+        model.addAttribute("endMonth", iMedicalDeclarationService.endMonth());
+        model.addAttribute("endYear", iMedicalDeclarationService.endYear());
         return "index";
     }
 
     @PostMapping("/medical")
-    public String createEmail(@ModelAttribute("medicalDeclaration") MedicalDeclaration medicalDeclaration,Model model){
-    model.addAttribute("medicalDeclaration",medicalDeclaration);
-    return "result";
+    public String createEmail(@ModelAttribute("medicalDeclaration") MedicalDeclaration medicalDeclaration, Model model) {
+        model.addAttribute("medicalDeclaration", medicalDeclaration);
+        return "result";
     }
 
 }

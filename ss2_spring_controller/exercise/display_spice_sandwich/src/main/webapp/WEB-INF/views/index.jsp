@@ -38,7 +38,7 @@
         </div>
     </form>
     <c:forEach items="${condiment}" var="cond">
-        <p>Gia vị: ${cond}</p>
+        Gia vị: <p>${cond}</p>
     </c:forEach>
 </div>
 </body>

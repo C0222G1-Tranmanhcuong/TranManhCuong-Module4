@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
-public class DictionaryServiceImp implements IDictionaryService {
+public class DictionaryService implements IDictionaryService {
     private static Map<String, String> stringMap = new HashMap<>();
 
     static {
