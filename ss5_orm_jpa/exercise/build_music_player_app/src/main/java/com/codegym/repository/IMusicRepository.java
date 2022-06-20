@@ -14,5 +14,6 @@ public interface IMusicRepository {
     void update(Music music);
 
     void remove(int id);
+
     List<Music> searchByName(String name);
 }

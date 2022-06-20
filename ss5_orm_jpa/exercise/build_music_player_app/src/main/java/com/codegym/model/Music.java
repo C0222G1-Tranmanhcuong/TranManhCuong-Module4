@@ -2,7 +2,7 @@ package com.codegym.model;
 
 import javax.persistence.*;
 
-@Entity(name="music")
+@Entity(name = "music")
 public class Music {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

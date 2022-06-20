@@ -41,6 +41,7 @@ public class MusicController {
         model.addAttribute("music", iMusicService.findById(id));
         return "edit";
     }
+
     @PostMapping("/edit")
     public String edit(Music music) {
         iMusicService.update(music);
@@ -54,9 +55,9 @@ public class MusicController {
     }
 
     @GetMapping("/search")
-    public String searchList (@RequestParam("name") String name, Model model){
+    public String searchList(@RequestParam("name") String name, Model model) {
         List<Music> music = iMusicService.searchByName(name);
-        model.addAttribute("musicList",music);
+        model.addAttribute("musicList", music);
         return "list";
     }
 }
