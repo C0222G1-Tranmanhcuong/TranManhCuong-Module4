@@ -62,7 +62,7 @@ public class ProductController {
     }
     @GetMapping("/search")
     public String search( String name, Model model){
-        model.addAttribute("product",iProductService.searchByName(name));
-        return "redirect:/";
+        model.addAttribute("productList",iProductService.searchByName(name));
+        return "list";
     }
 }
