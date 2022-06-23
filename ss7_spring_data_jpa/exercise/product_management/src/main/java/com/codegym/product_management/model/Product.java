@@ -1,4 +1,5 @@
-package com.codegym.model;
+package com.codegym.product_management.model;
+
 
 import javax.persistence.*;
 

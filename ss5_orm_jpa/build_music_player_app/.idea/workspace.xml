@@ -20,48 +20,150 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1e3327d-7ebe-45f3-aab3-2f014d2e2bb4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../ss1_spring_mvc/exercise/simple_dictionary_app/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1_spring_mvc/exercise/simple_dictionary_app/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss1_spring_mvc/exercise/simple_dictionary_app/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1_spring_mvc/exercise/simple_dictionary_app/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss1_spring_mvc/exercise/simple_dictionary_app/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1_spring_mvc/exercise/simple_dictionary_app/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss1_spring_mvc/exercise/simple_dictionary_app/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1_spring_mvc/exercise/simple_dictionary_app/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss1_spring_mvc/exercise/simple_dictionary_app/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1_spring_mvc/exercise/simple_dictionary_app/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss1_spring_mvc/exercise/simple_dictionary_app/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1_spring_mvc/exercise/simple_dictionary_app/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss1_spring_mvc/exercise/simple_dictionary_app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1_spring_mvc/exercise/simple_dictionary_app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss1_spring_mvc/exercise/simple_dictionary_app/build/classes/java/main/com/codegym/controller/SimpleDictionary.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss1_spring_mvc/exercise/simple_dictionary_app/build/classes/java/main/com/codegym/service/DictionaryServiceImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss1_spring_mvc/exercise/simple_dictionary_app/build/libs/simple_dictionary_app-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1_spring_mvc/exercise/simple_dictionary_app/build/libs/simple_dictionary_app-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss2_spring_controller/exercise/display_spice_sandwich/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2_spring_controller/exercise/display_spice_sandwich/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss2_spring_controller/exercise/display_spice_sandwich/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2_spring_controller/exercise/display_spice_sandwich/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss2_spring_controller/exercise/display_spice_sandwich/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2_spring_controller/exercise/display_spice_sandwich/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss2_spring_controller/exercise/display_spice_sandwich/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2_spring_controller/exercise/display_spice_sandwich/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss2_spring_controller/exercise/display_spice_sandwich/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2_spring_controller/exercise/display_spice_sandwich/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss2_spring_controller/exercise/display_spice_sandwich/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2_spring_controller/exercise/display_spice_sandwich/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss2_spring_controller/exercise/display_spice_sandwich/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2_spring_controller/exercise/display_spice_sandwich/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss2_spring_controller/exercise/display_spice_sandwich/build/classes/java/main/com/codegym/controller/SpiceSandwichController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2_spring_controller/exercise/display_spice_sandwich/build/classes/java/main/com/codegym/controller/SpiceSandwichController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss2_spring_controller/exercise/display_spice_sandwich/build/libs/display_spice_sandwich-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2_spring_controller/exercise/display_spice_sandwich/build/libs/display_spice_sandwich-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss2_spring_controller/exercise/display_spice_sandwich/src/main/java/com/codegym/controller/SpiceSandwichController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2_spring_controller/exercise/display_spice_sandwich/src/main/java/com/codegym/controller/SpiceSandwichController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss3_data_binding_form/exercise/electronic_mailbox/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_data_binding_form/exercise/electronic_mailbox/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss3_data_binding_form/exercise/electronic_mailbox/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_data_binding_form/exercise/electronic_mailbox/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss3_data_binding_form/exercise/electronic_mailbox/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_data_binding_form/exercise/electronic_mailbox/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss3_data_binding_form/exercise/electronic_mailbox/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_data_binding_form/exercise/electronic_mailbox/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss3_data_binding_form/exercise/electronic_mailbox/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_data_binding_form/exercise/electronic_mailbox/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss3_data_binding_form/exercise/electronic_mailbox/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_data_binding_form/exercise/electronic_mailbox/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss3_data_binding_form/exercise/electronic_mailbox/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_data_binding_form/exercise/electronic_mailbox/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss3_data_binding_form/exercise/electronic_mailbox/build/classes/java/main/com/codegym/controller/EmailBoxController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_data_binding_form/exercise/electronic_mailbox/build/classes/java/main/com/codegym/controller/EmailBoxController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss3_data_binding_form/exercise/electronic_mailbox/build/libs/electronic_mailbox-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_data_binding_form/exercise/electronic_mailbox/build/libs/electronic_mailbox-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/build/classes/java/main/com/codegym/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/build/classes/java/main/com/codegym/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/build/classes/java/main/com/codegym/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/build/classes/java/main/com/codegym/service/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/build/libs/product_management-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/build/libs/product_management-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/src/main/java/com/codegym/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/src/main/java/com/codegym/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/src/main/java/com/codegym/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/src/main/java/com/codegym/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/src/main/webapp/WEB-INF/views/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss4_view_thymeleaf/exercise/product_management/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/blog_app/src/main/resources/templates/category/create-category.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/java/com/codegym/product_management/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/java/com/codegym/product_management/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/java/com/codegym/product_management/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/java/com/codegym/product_management/service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/java/com/codegym/product_management/service/imp/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/bootstrap413/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/bootstrap413/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/bootstrap413/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/bootstrap413/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/css/dataTables.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/css/dataTables.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/css/dataTables.bootstrap4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/css/dataTables.bootstrap4.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/css/dataTables.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/css/dataTables.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/css/dataTables.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/css/dataTables.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/css/dataTables.semanticui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/css/dataTables.semanticui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/css/jquery.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/css/jquery.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/images/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/images/sort_asc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/images/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/images/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/images/sort_desc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/js/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/js/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/js/dataTables.bootstrap4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/js/dataTables.bootstrap4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/js/dataTables.foundation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/js/dataTables.foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/js/dataTables.jqueryui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/js/dataTables.jqueryui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/js/dataTables.semanticui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/js/dataTables.semanticui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/js/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/datatables/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/static/boostrap/jquery/jquery-3.5.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/templates/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/templates/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/templates/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/product_management/src/main/resources/templates/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/java/com/codgym/music_app/controller/MusicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/java/com/codgym/music_app/model/Music.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/java/com/codgym/music_app/repository/IMusicRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/java/com/codgym/music_app/service/IMusicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/java/com/codgym/music_app/service/imp/MusicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/bootstrap413/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/bootstrap413/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/bootstrap413/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/bootstrap413/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/bootstrap413/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/bootstrap413/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/css/dataTables.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/css/dataTables.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/css/dataTables.bootstrap4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/css/dataTables.bootstrap4.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/css/dataTables.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/css/dataTables.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/css/dataTables.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/css/dataTables.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/css/dataTables.semanticui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/css/dataTables.semanticui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/css/jquery.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/css/jquery.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/images/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/images/sort_asc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/images/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/images/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/images/sort_desc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/js/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/js/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/js/dataTables.bootstrap4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/js/dataTables.bootstrap4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/js/dataTables.foundation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/js/dataTables.foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/js/dataTables.jqueryui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/js/dataTables.jqueryui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/js/dataTables.semanticui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/js/dataTables.semanticui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/js/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/datatables/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/static/boostrap/jquery/jquery-3.5.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/templates/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/templates/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/music_app/src/main/resources/templates/result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/register_form/src/main/java/com/codegym/register_form/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/register_form/src/main/java/com/codegym/register_form/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/register_form/src/main/java/com/codegym/register_form/repository/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/register_form/src/main/java/com/codegym/register_form/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/register_form/src/main/java/com/codegym/register_form/service/imp/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/register_form/src/main/resources/templates/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/register_form/src/main/resources/templates/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss8_validation_spring/exercise/register_form/src/main/resources/templates/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6_jpa/exercise/build_blog_app/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6_jpa/exercise/build_blog_app/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6_jpa/exercise/build_blog_app/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6_jpa/exercise/build_blog_app/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6_jpa/exercise/build_blog_app/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6_jpa/exercise/build_blog_app/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6_jpa/exercise/build_blog_app/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6_jpa/exercise/build_blog_app/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6_jpa/exercise/build_blog_app/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6_jpa/exercise/build_blog_app/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6_jpa/exercise/build_blog_app/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6_jpa/exercise/build_blog_app/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6_jpa/exercise/build_blog_app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6_jpa/exercise/build_blog_app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6_jpa/exercise/build_blog_app/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6_jpa/exercise/build_blog_app/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6_jpa/exercise/build_blog_app/build/classes/java/main/com/codegym/controller/BlogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6_jpa/exercise/build_blog_app/build/classes/java/main/com/codegym/controller/BlogController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6_jpa/exercise/build_blog_app/build/libs/build_blog_app-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6_jpa/exercise/build_blog_app/build/libs/build_blog_app-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/blog_app/src/main/java/com/codegym/ss7_blog_app/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/blog_app/src/main/java/com/codegym/ss7_blog_app/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/blog_app/src/main/java/com/codegym/ss7_blog_app/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/blog_app/src/main/java/com/codegym/ss7_blog_app/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/blog_app/src/main/java/com/codegym/ss7_blog_app/repository/ICategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/blog_app/src/main/java/com/codegym/ss7_blog_app/repository/ICategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/blog_app/src/main/java/com/codegym/ss7_blog_app/service/ICategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/blog_app/src/main/java/com/codegym/ss7_blog_app/service/ICategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/blog_app/src/main/java/com/codegym/ss7_blog_app/service/imp/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/blog_app/src/main/java/com/codegym/ss7_blog_app/service/imp/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/blog_app/src/main/resources/templates/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/blog_app/src/main/resources/templates/category/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/blog_app/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7_spring_data_jpa/exercise/blog_app/src/main/resources/templates/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,9 +203,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exercise/build_music_player_app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -206,6 +310,9 @@
       <option name="presentableId" value="Default" />
       <updated>1655696820084</updated>
       <workItem from="1655696827475" duration="14175000" />
+      <workItem from="1655907650248" duration="12000" />
+      <workItem from="1655907678385" duration="15000" />
+      <workItem from="1655979653241" duration="12000" />
     </task>
     <servers />
   </component>
@@ -222,6 +329,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="110" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1655699570781">

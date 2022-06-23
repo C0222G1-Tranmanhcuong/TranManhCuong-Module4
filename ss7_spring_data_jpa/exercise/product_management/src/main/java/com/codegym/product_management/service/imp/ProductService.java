@@ -1,23 +1,25 @@
-package com.codegym.service.imp;
+package com.codegym.product_management.service.imp;
 
-import com.codegym.model.Product;
-import com.codegym.repository.IProductRepository;
-import com.codegym.service.IProductService;
+
+import com.codegym.product_management.model.Product;
+import com.codegym.product_management.repository.IProductRepository;
+import com.codegym.product_management.service.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+
 
 @Service
 public class ProductService implements IProductService {
-    private static List<Product> productList = new ArrayList<>();
-
-    @Autowired
     private IProductRepository iProductRepository;
 
     @Override
     public List<Product> findAll() {
-        return iProductRepository.findAll();
+        return iProductRepository.findAllProduct();
     }
 
     @Override
@@ -32,7 +34,7 @@ public class ProductService implements IProductService {
 
     @Override
     public void update(Product product) {
-        iProductRepository.update(product);
+        iProductRepository.update(product.getName(), String.valueOf(product.getPrice()), product.getProducer(), product.getStatus());
     }
 
     @Override
@@ -41,7 +43,13 @@ public class ProductService implements IProductService {
     }
 
     @Override
-    public List<Product> searchByName(String name) {
-        return iProductRepository.searchByName(name);
+    public Page<Product> findAll(Pageable pageable) {
+        return iProductRepository.findAllProduct(pageable);
+    }
+
+    @Override
+    public Page<Product> searchByName(String name, Pageable pageable) {
+        return iProductRepository.searchByName("%" + name + "%", pageable);
     }
 }
+

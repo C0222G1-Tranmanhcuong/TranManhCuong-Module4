@@ -8,21 +8,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @Controller
+@RequestMapping("blog")
 public class BlogController {
     @Autowired
     private IBlogService iBlogService;
     @Autowired
     private ICategoryService iCategoryService;
 
-    @GetMapping("/")
+    @GetMapping()
     public String home(@RequestParam(name = "page", defaultValue = "0") int page, Model model) {
         Sort sort = Sort.by("create_day");
         Page<Blog> list = iBlogService.findAll(PageRequest.of(page, 1, sort));
@@ -47,7 +45,7 @@ public class BlogController {
     @PostMapping("/save")
     public String addNew(Blog blog) {
         iBlogService.save(blog);
-        return "redirect:/";
+        return "";
     }
 
     @GetMapping("/edit/{id}")

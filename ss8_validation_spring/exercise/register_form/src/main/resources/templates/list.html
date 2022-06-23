@@ -32,7 +32,7 @@
 </head>
 <body class="h-100">
 <nav class="navbar navbar-light bg-dark text-white center-box head-text">
-    DANH SÁCH BLOG
+    DANH SÁCH USER
 </nav>
 
 <div class="p-0 m-0" style="width: 10%; float: left">&nbsp;</div>
@@ -42,50 +42,41 @@
         <tr>
             <th colspan="11">
                 <div class="W-100 footer">
-                    <a href="blog/create">Thêm mới</a>
-                    <form action="/search">
-                        <label>
-                            <input type="text" name="name">
-                        </label>
-                        <button type="submit">Tìm kiếm</button>
+                    <a href="/create">Đăng kí Tài khoản</a>
                 </div>
             </th>
         </tr>
         <tr class="w-100">
             <th>No.</th>
-            <th>ID Blog</th>
-            <th>Tên Blog</th>
-            <th>Nội dung</th>
-            <th>Ngày tạo</th>
-            <th>Danh mục</th>
-            <th>Edit</th>
-            <th>Delete</th>
-            <th>View</th>
+            <th>ID User</th>
+            <th>FIRST NAME</th>
+            <th>LAST NAME</th>
+            <th>AGE</th>
+            <th>PHONE NUMBER</th>
+            <th>EMAIL</th>
         </tr>
         </thead>
         <tbody>
-        <tr th:each="blog,loop : ${blogList}">
+        <tr th:each="user,loop : ${userList}">
             <td th:text="${loop.count}"></td>
-            <td th:text="${blog.idBlog}"></td>
-            <td th:text="${blog.nameBlog}"></td>
-            <td th:text="${blog.content}"></td>
-            <td th:text="${blog.createday}"></td>
-            <td th:text="${blog.category.nameCategory}"></td>
-            <td><a th:href="@{/edit/{id}(id=${blog.idBlog})}">Edit</a></td>
-            <td><a th:href="@{/delete/{id}(id=${blog.idBlog})}">Delete</a></td>
-            <td><a th:href="@{/view/{id}(id=${blog.idBlog})}">Nội dung chi tiết</a></td>
+            <td th:text="${user.idUser}"></td>
+            <td th:text="${user.firstName}"></td>
+            <td th:text="${user.lastName}"></td>
+            <td th:text="${user.age}"></td>
+            <td th:text="${user.phoneNumber}"></td>
+            <td th:text="${user.email}"></td>
         </tr>
         </tbody>
     </table>
     <div>
     <span>
-        <a th:if = "${blogList.hasPrevious()}" th:href="@{/(page = ${blogList.number - 1})}">Previous</a>
+        <a th:if="${userList.hasPrevious()}" th:href="@{/(page = ${userList.number - 1})}">Previous</a>
     </span>
-        <span th:each="pageNo: ${#numbers.sequence(0,blogList.totalPages - 1)}">
+        <span th:each="pageNo: ${#numbers.sequence(0,userList.totalPages - 1)}">
         <a th:href="@{/(page = ${pageNo})}" th:text="${pageNo}"></a>
     </span>
         <span>
-        <a th:if = "${blogList.hasNext()}" th:href="@{/(page = ${blogList.number +1})}">Next</a>
+        <a th:if="${userList.hasNext()}" th:href="@{/(page = ${userList.number +1})}">Next</a>
     </span>
     </div>
 

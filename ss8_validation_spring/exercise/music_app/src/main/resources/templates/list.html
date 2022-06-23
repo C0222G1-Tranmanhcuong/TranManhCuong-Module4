@@ -42,41 +42,37 @@
         <tr>
             <th colspan="11">
                 <div class="W-100 footer">
-                    <a href="/create">Đăng kí Tài khoản</a>
+                    <a href="/create">Thêm mới</a>
                 </div>
             </th>
         </tr>
         <tr class="w-100">
             <th>No.</th>
-            <th>ID User</th>
-            <th>FIRST NAME</th>
-            <th>LAST NAME</th>
-            <th>AGE</th>
-            <th>PHONE NUMBER</th>
-            <th>EMAIL</th>
+            <th>ID MUSIC</th>
+            <th>NAME MUSIC</th>
+            <th>NAME SINGER</th>
+            <th>CATEGORY</th>
         </tr>
         </thead>
         <tbody>
-        <tr th:each="user,loop : ${userList}">
+        <tr th:each="music,loop : ${musicList}">
             <td th:text="${loop.count}"></td>
-            <td th:text="${user.idUser}"></td>
-            <td th:text="${user.firstName}"></td>
-            <td th:text="${user.lastName}"></td>
-            <td th:text="${user.age}"></td>
-            <td th:text="${user.phoneNumber}"></td>
-            <td th:text="${user.email}"></td>
+            <td th:text="${music.idMusic}"></td>
+            <td th:text="${music.nameMusic}"></td>
+            <td th:text="${music.nameSinger}"></td>
+            <td th:text="${music.category}"></td>
         </tr>
         </tbody>
     </table>
     <div>
     <span>
-        <a th:if = "${userList.hasPrevious()}" th:href="@{/(page = ${userList.number - 1})}">Previous</a>
+        <a th:if = "${musicList.hasPrevious()}" th:href="@{/(page = ${musicList.number - 1})}">Previous</a>
     </span>
-        <span th:each="pageNo: ${#numbers.sequence(0,userList.totalPages - 1)}">
+        <span th:each="pageNo: ${#numbers.sequence(0,musicList.totalPages - 1)}">
         <a th:href="@{/(page = ${pageNo})}" th:text="${pageNo}"></a>
     </span>
         <span>
-        <a th:if = "${userList.hasNext()}" th:href="@{/(page = ${userList.number +1})}">Next</a>
+        <a th:if = "${musicList.hasNext()}" th:href="@{/(page = ${musicList.number +1})}">Next</a>
     </span>
     </div>
 

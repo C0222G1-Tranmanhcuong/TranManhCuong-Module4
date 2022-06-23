@@ -1,20 +1,41 @@
-package com.codegym.repository;
+package com.codegym.product_management.repository;
 
-import com.codegym.model.Product;
+
+
+import com.codegym.product_management.model.Product;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
-public interface IProductRepository {
+public interface IProductRepository extends JpaRepository<Product, Integer> {
+    @Query(value = "select * from product", nativeQuery = true)
+    List<Product> findAllProduct();
 
-    List<Product> findAll();
+    @Query(value = "select * from product", nativeQuery = true)
+    Page<Product> findAllProduct(Pageable pageable);
 
-    void save(Product product);
 
-    Product findById(int id);
+    @Modifying
+    @Query(value = "insert into prodcut(`name`,price,producer,status) value(:name,:price,:producer,:status) ", nativeQuery = true)
+    void save(@Param("name") String name, @Param("price") String price, @Param("producer") String producer,@Param("status") String status);
 
-    void update(Product product);
+    @Query(value = " select  * from product where id_product = :idProduct", nativeQuery = true)
+    Product findById(@Param("idProduct") int idProduct);
 
-    void remove(int id);
+    @Modifying
+    @Query(value = "update product set `name`= :name,price=:price, producer =:producer, status =:status where id_product =:idProduct", nativeQuery = true)
+    void update(@Param("name") String name, @Param("price") String price, @Param("producer") String producer,@Param("status") String status);
 
-    List<Product> searchByName(String name);
+
+    @Modifying
+    @Query(value = "delete from product where id_product =:idProduct", nativeQuery = true)
+    void remove(@Param("idProduct") Integer idProduct);
+
+    @Query(value = "select * from product where `name` Like :name", nativeQuery = true)
+    Page<Product> searchByName(@Param("name") String name, Pageable pageable);
 }

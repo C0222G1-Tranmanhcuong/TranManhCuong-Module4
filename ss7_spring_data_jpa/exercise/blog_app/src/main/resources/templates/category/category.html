@@ -42,7 +42,7 @@
         <tr>
             <th colspan="11">
                 <div class="W-100 footer">
-                    <a href="/create">Thêm mới</a>
+                    <a href="/create-category">Thêm mới</a>
                 </div>
             </th>
         </tr>
@@ -65,6 +65,17 @@
         </tr>
         </tbody>
     </table>
+    <div>
+    <span>
+        <a th:if = "${categoryList.hasPrevious()}" th:href="@{/(page = ${categoryList.number - 1})}">Previous</a>
+    </span>
+        <span th:each="pageNo: ${#numbers.sequence(0,categoryList.totalPages - 1)}">
+        <a th:href="@{/(page = ${pageNo})}" th:text="${pageNo}"></a>
+    </span>
+        <span>
+        <a th:if = "${categoryList.hasNext()}" th:href="@{/(page = ${categoryList.number +1})}">Next</a>
+    </span>
+    </div>
 </div>
 <div class="p-0 m-0" style="width: 10%; float: left">&nbsp;</div>
 </body>

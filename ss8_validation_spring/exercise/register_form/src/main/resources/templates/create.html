@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> MUSIC</title>
+    <title>USER</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="/resources/bootstrap413/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/resources/datatables/css/dataTables.bootstrap4.min.css"/>
@@ -18,32 +18,36 @@
 <body class="bg-dark">
 <div class="container">
     <div class=" bg-light">
-        <div class="h1 center-box"> THÊM MỚI BLOG</div>
-        <form th:object="${blog}" action="/save" method="post" class="p-3">
+        <div class="h1 center-box"> ĐĂNG KÍ</div>
+        <form th:object="${user}" action="/save" method="post" class="p-3">
             <div class="form-group">
-                <label>Nhập tên blog</label>
-                <input th:field="*{nameBlog}" class="form-control">
+                <label>First Name</label>
+                <input th:field="*{firstName}" class="form-control">
+                <p style="color: red" th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></p>
             </div>
 
             <div class="form-group">
-                <label>Nhập nội dung</label>
-                <input th:field="*{content}" class="form-control">
+                <label>Last Name</label>
+                <input th:field="*{lastName}" class="form-control">
+                <p style="color: red" th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></p>
             </div>
 
             <div class="form-group">
-                <label>Ngày tạo blog</label>
-                <input type="date" th:field="*{createday}" class="form-control">
+                <label>Age</label>
+                <input type="text" th:field="*{age}" class="form-control">
+                <p style="color: red" th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></p>
             </div>
             <div class="form-group">
-                <label>Danh mục</label>
-                <select th:field = "*{category}">
-                    <option th:each="category: ${categoryList}" th:value="${category.id}" th:text="${category.nameCategory}">
-
-                    </option>
-
-                </select>
+                <label>Phone Number</label>
+                <input type="text" th:field="*{phoneNumber}" class="form-control">
+                <p style="color: red" th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></p>
             </div>
-            <button type="submit" class="btn btn-dark w-100">Submit</button>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" th:field="*{email}" class="form-control">
+                <p style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></p>
+            </div>
+            <button type="submit" class="btn btn-dark w-100">Đăng kí</button>
         </form>
     </div>
 </div>
