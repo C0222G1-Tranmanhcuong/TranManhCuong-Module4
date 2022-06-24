@@ -78,6 +78,17 @@
         </tr>
         </tbody>
     </table>
+    <div>
+    <span>
+        <a th:if="${productList.hasPrevious()}" th:href="@{/(page = ${productList.number - 1})}">Previous</a>
+    </span>
+        <span th:each="pageNo: ${#numbers.sequence(0,productList.totalPages - 1)}">
+        <a th:href="@{/(page = ${pageNo})}" th:text="${pageNo}"></a>
+    </span>
+        <span>
+        <a th:if="${productList.hasNext()}" th:href="@{/(page = ${productList.number +1})}">Next</a>
+    </span>
+    </div>
 </div>
 <div class="p-0 m-0" style="width: 10%; float: left">&nbsp;</div>
 </body>
@@ -90,26 +101,4 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 <script src="/resources/bootstrap413/js/bootstrap.bundle.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $('#tableEmployee').dataTable({
-            "dom": 'lrtip',
-            "lengthChange": false,
-            "pageLength": 2
-        });
-    })
-</script>
-
-<script>
-    var id;
-
-    function productIndex(index) {
-        id = index;
-    };
-
-    function productIndex2() {
-        let link = "/delete/" + id;
-        window.location.href = link;
-    };
-</script>
 </html>

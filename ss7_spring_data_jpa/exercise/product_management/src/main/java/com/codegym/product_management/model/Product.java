@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_product", columnDefinition = "INT")
+    @Column(name = "id_product")
     private Integer idProduct;
     private String name;
     private double price;

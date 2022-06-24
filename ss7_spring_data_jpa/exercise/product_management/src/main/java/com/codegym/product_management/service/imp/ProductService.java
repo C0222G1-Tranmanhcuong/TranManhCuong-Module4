@@ -15,12 +15,9 @@ import java.util.List;
 
 @Service
 public class ProductService implements IProductService {
+    @Autowired
     private IProductRepository iProductRepository;
 
-    @Override
-    public List<Product> findAll() {
-        return iProductRepository.findAllProduct();
-    }
 
     @Override
     public void save(Product product) {
@@ -34,7 +31,7 @@ public class ProductService implements IProductService {
 
     @Override
     public void update(Product product) {
-        iProductRepository.update(product.getName(), String.valueOf(product.getPrice()), product.getProducer(), product.getStatus());
+        iProductRepository.update(product.getName(), String.valueOf(product.getPrice()), product.getProducer(), product.getStatus(),product.getIdProduct());
     }
 
     @Override
