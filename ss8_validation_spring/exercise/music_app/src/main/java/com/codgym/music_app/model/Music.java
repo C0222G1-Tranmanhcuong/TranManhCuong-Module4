@@ -15,28 +15,27 @@ public class Music {
     @Column(name = "name_music")
     @NotBlank(message = "Không để trống trường này")
     @Size(max = 800,message = "Không vượt qua 800 kí tự")
-    @Pattern(regexp = "^[A-Za-z0-9]")
+    @Pattern(regexp = "^[A-Za-z ]+$")
     private String nameMusic;
     @Column(name = "name_singer")
     @NotBlank(message = "Không để trống trường này")
     @Size(max = 300,message = "Không vượt qua 300 kí tự")
-    @Pattern(regexp = "^[A-Za-z0-9]$")
+    @Pattern(regexp = "^[A-Za-z ]+$")
     private String nameSinger;
     @NotBlank(message = "Không để trống trường này")
     @Size(max = 1000,message = "Không vượt qua 1000 kí tự")
-    @Pattern(regexp = "^[A-Za-z0-9, ]$")
+    @Pattern(regexp = "^[A-Za-z, ]+$")
     private String category;
 
     public Music() {
     }
 
     public Music(Integer idMusic, @NotBlank(message = "Không để trống trường này") @Size(max = 800,
-            message = "Không vượt qua 800 kí tự") @Pattern(regexp = "^[A-Za-z0-9]") String nameMusic,
+            message = "Không vượt qua 800 kí tự") @Pattern(regexp = "^[A-Za-z ]+$") String nameMusic,
                  @NotBlank(message = "Không để trống trường này") @Size(max = 300, message = "Không vượt qua 300 kí tự")
-                 @Pattern(regexp = "^[A-Za-z0-9]$") String nameSinger,
-                 @NotBlank(message = "Không để trống trường này")
+                 @Pattern(regexp = "^[A-Za-z ]+$") String nameSinger, @NotBlank(message = "Không để trống trường này")
                  @Size(max = 1000, message = "Không vượt qua 1000 kí tự")
-                 @Pattern(regexp = "^[A-Za-z0-9, ]$") String category) {
+                 @Pattern(regexp = "^[A-Za-z, ]+$") String category) {
         this.idMusic = idMusic;
         this.nameMusic = nameMusic;
         this.nameSinger = nameSinger;

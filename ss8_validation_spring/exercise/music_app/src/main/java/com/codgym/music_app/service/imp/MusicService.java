@@ -29,5 +29,15 @@ public class MusicService implements IMusicService {
     public List<Music> findAll() {
         return iMusicRepository.findAllMusic();
     }
+
+    @Override
+    public void update(Music music) {
+        iMusicRepository.update(music.getNameMusic(),music.getNameSinger(),music.getCategory(),music.getIdMusic());
+    }
+
+    @Override
+    public Music findById(int id) {
+        return iMusicRepository.findById(id);
+    }
 }
 

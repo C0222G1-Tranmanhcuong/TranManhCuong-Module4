@@ -12,4 +12,8 @@ public interface IMusicService {
     void save(Music music);
 
     List<Music> findAll();
+
+    void update(Music music);
+
+    Music findById(int id);
 }

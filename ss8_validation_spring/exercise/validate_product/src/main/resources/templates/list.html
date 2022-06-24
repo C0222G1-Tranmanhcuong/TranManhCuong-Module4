@@ -32,7 +32,7 @@
 </head>
 <body class="h-100">
 <nav class="navbar navbar-light bg-dark text-white center-box head-text">
-    DANH SÁCH USER
+    Danh sách sản phẩm
 </nav>
 
 <div class="p-0 m-0" style="width: 10%; float: left">&nbsp;</div>
@@ -43,42 +43,52 @@
             <th colspan="11">
                 <div class="W-100 footer">
                     <a href="/create">Thêm mới</a>
+                    <form action="/search">
+                        <label>
+                            <input type="text" name="name">
+                        </label>
+                        <button type="submit">Tìm kiếm</button>
+                    </form>
                 </div>
             </th>
         </tr>
         <tr class="w-100">
             <th>No.</th>
-            <th>ID MUSIC</th>
-            <th>NAME MUSIC</th>
-            <th>NAME SINGER</th>
-            <th>CATEGORY</th>
+            <th>ID sản phẩm</th>
+            <th>Tên sản phẩm</th>
+            <th>Giá sản phẩm</th>
+            <th>Mô tả</th>
+            <th>Nhà sản xuất</th>
             <th>Edit</th>
+            <th>Delete</th>
+            <th>View</th>
         </tr>
         </thead>
         <tbody>
-        <tr th:each="music,loop : ${musicList}">
+        <tr th:each="product,loop : ${productList}">
             <td th:text="${loop.count}"></td>
-            <td th:text="${music.idMusic}"></td>
-            <td th:text="${music.nameMusic}"></td>
-            <td th:text="${music.nameSinger}"></td>
-            <td th:text="${music.category}"></td>
-            <td><a th:href="@{/edit/{id}(id=${music.idMusic})}">Edit</a></td>
-
+            <td th:text="${product.idProduct}"></td>
+            <td th:text="${product.name}"></td>
+            <td th:text="${product.price}"></td>
+            <td th:text="${product.status}"></td>
+            <td th:text="${product.producer}"></td>
+            <td><a th:href="@{/edit/{id}(id=${product.idProduct})}">Edit</a></td>
+            <td><a th:href="@{/delete/{id}(id=${product.idProduct})}">Delete</a></td>
+            <td><a th:href="@{/view/{id}(id=${product.idProduct})}">View</a></td>
         </tr>
         </tbody>
     </table>
     <div>
     <span>
-        <a th:if = "${musicList.hasPrevious()}" th:href="@{/(page = ${musicList.number - 1})}">Previous</a>
+        <a th:if="${productList.hasPrevious()}" th:href="@{/(page = ${productList.number - 1})}">Previous</a>
     </span>
-        <span th:each="pageNo: ${#numbers.sequence(0,musicList.totalPages - 1)}">
+        <span th:each="pageNo: ${#numbers.sequence(0,productList.totalPages - 1)}">
         <a th:href="@{/(page = ${pageNo})}" th:text="${pageNo}"></a>
     </span>
         <span>
-        <a th:if = "${musicList.hasNext()}" th:href="@{/(page = ${musicList.number +1})}">Next</a>
+        <a th:if="${productList.hasNext()}" th:href="@{/(page = ${productList.number +1})}">Next</a>
     </span>
     </div>
-
 </div>
 <div class="p-0 m-0" style="width: 10%; float: left">&nbsp;</div>
 </body>
@@ -91,26 +101,4 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 <script src="/resources/bootstrap413/js/bootstrap.bundle.min.js"></script>
-<!--<script>-->
-<!--    $(document).ready(function () {-->
-<!--        $('#tableEmployee').dataTable({-->
-<!--            "dom": 'lrtip',-->
-<!--            "lengthChange": false,-->
-<!--            "pageLength": 2-->
-<!--        });-->
-<!--    })-->
-<!--</script>-->
-
-<script>
-    var id;
-
-    function productIndex(index) {
-        id = index;
-    };
-
-    function productIndex2() {
-        let link = "/delete/" + id;
-        window.location.href = link;
-    };
-</script>
 </html>

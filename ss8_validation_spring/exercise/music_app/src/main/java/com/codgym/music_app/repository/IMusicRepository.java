@@ -21,4 +21,11 @@ public interface IMusicRepository extends JpaRepository<Music, Integer> {
 
     @Query(value = "select * from music", nativeQuery = true)
     List<Music> findAllMusic();
+
+    @Modifying
+    @Query(value = "update music set name_music= :name_music,name_singer=:name_singer, category =:category where id_music =:id", nativeQuery = true)
+    void update(@Param("name_music") String nameMusic, @Param("name_singer") String nameSinger, @Param("category") String category, @Param("id") Integer id);
+
+    @Query(value = " select  * from music where id_music = :id", nativeQuery = true)
+    Music findById(@Param("id") int id);
 }
