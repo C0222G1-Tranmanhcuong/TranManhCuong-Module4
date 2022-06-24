@@ -1,7 +1,6 @@
 package com.codegym.product_management.repository;
 
 
-
 import com.codegym.product_management.model.Product;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -11,7 +10,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import javax.transaction.Transactional;
-import java.util.List;
 
 @Transactional
 public interface IProductRepository extends JpaRepository<Product, Integer> {
@@ -23,14 +21,14 @@ public interface IProductRepository extends JpaRepository<Product, Integer> {
 
     @Modifying
     @Query(value = "insert into prodcut(`name`,price,producer,status) value(:name,:price,:producer,:status) ", nativeQuery = true)
-    void save(@Param("name") String name, @Param("price") String price, @Param("producer") String producer,@Param("status") String status);
+    void save(@Param("name") String name, @Param("price") String price, @Param("producer") String producer, @Param("status") String status);
 
     @Query(value = " select  * from product where id_product = :id", nativeQuery = true)
     Product findById(@Param("id") int id);
 
     @Modifying
     @Query(value = "update product set name =:name,price=:price, producer =:producer, status =:status where id_product =:id", nativeQuery = true)
-    void update(@Param("name") String name, @Param("price") String price, @Param("producer") String producer,@Param("status") String status,@Param("id") Integer idProduct);
+    void update(@Param("name") String name, @Param("price") String price, @Param("producer") String producer, @Param("status") String status, @Param("id") Integer idProduct);
 
 
     @Modifying
