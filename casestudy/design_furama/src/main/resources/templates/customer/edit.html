@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MUSIC</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="/bootstrap413/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/datatables/css/dataTables.bootstrap4.min.css"/>
+    <style>
+        .center-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="bg-dark">
+<div class="container">
+    <div class=" bg-light">
+        <div class="h1 center-box"> Chỉnh sửa blog</div>
+        <form th:action="@{/customers/update}" th:object="${customer}"
+              method="POST">
+            <div class="form-group">
+                <label>Nhập Id khách hàng</label>
+                <input th:field="*{customerId}" placeholder="Nhập Id khách hàng" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Nhập Tên khách hàng</label>
+                <input th:field="*{name}" placeholder="Nhập tên khách hàng"  class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Năm sinh</label>
+                <input type="date" th:field="*{birthday}"  class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Giới tính</label>
+                <input type="radio" th:field="*{gender}"value="Male" class="form-control">Male
+                <input type="radio" th:field="*{gender}"value="Female" class="form-control">Female
+            </div>
+
+            <div class="form-group">
+                <label>CMND</label>
+                <input type="text" th:field="*{idCard}" placeholder="Nhập CMND khách hàng"  class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Số điện thoai</label>
+                <input type="text" th:field="*{phone}" placeholder="Nhập số điện thoại khách hàng"  class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="date" th:field="*{email}" placeholder="Nhập email khách hàng"  class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Địa chỉ</label>
+                <input type="date" th:field="*{address}" placeholder="Nhập địa chỉ khách hàng"  class="form-control">
+            </div>
+            <button type="submit" class="btn btn-dark w-100">Edit</button>
+        </form>
+
+    </div>
+</div>
+</body>
+
+<script src="/jquery/jquery-3.5.1.min.js"></script>
+<script src="/datatables/js/jquery.dataTables.min.js"></script>
+<script src="/datatables/js/dataTables.bootstrap4.min.js"></script>
+<script src="bootstrap413/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous">
+</script>
+</html>
