@@ -14,5 +14,6 @@ public interface ICategoryService {
     void save(Category category);
 
     Page<Category> findAll(Pageable pageable);
+
     Category search(int id);
 }

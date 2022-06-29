@@ -38,7 +38,7 @@ public class CategoryController {
     }
 
     @GetMapping("/{id}/view")
-    public Set<Blog> viewBlog(@PathVariable Integer id){
+    public Set<Blog> viewBlog(@PathVariable Integer id) {
         Set<Blog> blogs = iCategoryService.findById(id).getBlogs();
         return blogs;
     }
