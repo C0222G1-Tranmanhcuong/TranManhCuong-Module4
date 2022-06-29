@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #cal {
+            border: 1px solid black;
+            margin: 0 auto;
+            padding: 0 20px 20px;
+            background: cornsilk;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+<div id="cal">
+    <h3>Nội dung chi tiết</h3>
+    <p>
+        <a th:href="@{/}">
+            Back to blog list
+        </a>
+    </p>
+    <div>
+        <div>
+            <p>Id blog: <label th:text="${blog.idBlog}"></label></p>
+        </div>
+        <div>
+            <p>Tên Blog: <label th:text="${blog.nameBlog}"></label></p>
+        </div>
+        <div>
+            <p>Nội dung: <label th:text="${blog.content}"></label></p>
+        </div>
+        <div>
+            <p>Ngày tạo: <label th:text="${blog.createday}"></label></p>
+        </div>
+        <div>
+            <p>Ngày tạo: <label th:text="${blog.category.nameCategory}"></label></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
