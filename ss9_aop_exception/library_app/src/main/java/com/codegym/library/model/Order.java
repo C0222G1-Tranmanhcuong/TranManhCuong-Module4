@@ -1,44 +1,49 @@
 package com.codegym.library.model;
 
 import javax.persistence.*;
+import javax.validation.Valid;
 
 @Entity(name = "oder")
-public class Oder {
+public class Order {
 
-    @Id@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_oder")
-    private Integer idOder;
+    private Integer idOrder;
 
     @Column(name = "code_oder")
-    private Integer codeOder;
+    private Integer codeOrder;
 
     @ManyToOne
-    @JoinColumn(name = "id_book",referencedColumnName = "idBook")
+    @JoinColumn(name = "id_book", referencedColumnName = "id_Book")
     private Book book;
 
-    public Oder() {
+    public Order() {
     }
 
-    public Oder(Integer idOder, Integer codeOder, Book book) {
-        this.idOder = idOder;
-        this.codeOder = codeOder;
+    public Order(Integer idOrder, Integer codeOrder, Book book) {
+        this.idOrder = idOrder;
+        this.codeOrder = codeOrder;
         this.book = book;
     }
 
-    public Integer getIdOder() {
-        return idOder;
+    public Order(Integer code, Book book) {
     }
 
-    public void setIdOder(Integer idOder) {
-        this.idOder = idOder;
+    public Integer getIdOrder() {
+        return idOrder;
     }
 
-    public Integer getCodeOder() {
-        return codeOder;
+    public void setIdOrder(Integer idOder) {
+        this.idOrder = idOder;
     }
 
-    public void setCodeOder(Integer codeOder) {
-        this.codeOder = codeOder;
+    public Integer getCodeOrder() {
+        return codeOrder;
+    }
+
+    public void setCodeOrder(Integer codeOder) {
+        this.codeOrder = codeOder;
     }
 
     public Book getBook() {

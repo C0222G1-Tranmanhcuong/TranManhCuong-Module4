@@ -1,4 +1,10 @@
 package com.codegym.library.repository;
 
-public class IOderRepository {
+import com.codegym.library.model.Order;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import javax.transaction.Transactional;
+
+@Transactional
+public interface IOderRepository extends JpaRepository<Order, Integer> {
 }
