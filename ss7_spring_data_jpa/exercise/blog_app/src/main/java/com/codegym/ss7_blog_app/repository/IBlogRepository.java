@@ -30,7 +30,7 @@ public interface IBlogRepository extends JpaRepository<Blog, Integer> {
     Blog findById(@Param("id") int id);
 
     @Modifying
-    @Query(value = "update blog set name_blog= :name_blog,content=:content, create_day =:create_day, id_category =:id where id_blog =:id", nativeQuery = true)
+    @Query(value = "update blog set name_blog= :name_blog,content=:content, create_day =:create_day, id =:id where id_blog =:id", nativeQuery = true)
     void update(@Param("name_blog") String nameBlog, @Param("content") String content, @Param("create_day") String createDay, @Param("id") Integer idBlog, @Param("id") Integer id);
 
     @Modifying

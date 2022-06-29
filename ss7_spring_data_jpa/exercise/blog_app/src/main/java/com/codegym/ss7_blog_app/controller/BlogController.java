@@ -20,12 +20,12 @@ public class BlogController {
     @Autowired
     private ICategoryService iCategoryService;
 
-    @GetMapping()
+    @GetMapping("")
     public String home(@RequestParam(name = "page", defaultValue = "0") int page, Model model) {
         Sort sort = Sort.by("create_day");
         Page<Blog> list = iBlogService.findAll(PageRequest.of(page, 1, sort));
         model.addAttribute("blogList", list);
-        return "list";
+        return "/list";
     }
 
     @GetMapping("/view/{id}")
@@ -39,13 +39,13 @@ public class BlogController {
     public String create(Model model) {
         model.addAttribute("blog", new Blog());
         model.addAttribute("categoryList", iCategoryService.findAll());
-        return "create";
+        return "/create";
     }
 
     @PostMapping("/save")
     public String addNew(Blog blog) {
         iBlogService.save(blog);
-        return "";
+        return "redirect:/blog";
     }
 
     @GetMapping("/edit/{id}")
@@ -53,19 +53,19 @@ public class BlogController {
         model.addAttribute("blog", iBlogService.findById(id));
         List<Category> categoryList = iBlogService.categoryList();
         model.addAttribute("categoryList", categoryList);
-        return "edit";
+        return "/edit";
     }
 
     @PostMapping("/edit")
     public String edit(Blog blog) {
         iBlogService.update(blog);
-        return "redirect:/";
+        return "redirect:/blog";
     }
 
     @GetMapping("/delete/{id}")
     public String remove(@PathVariable("id") int id) {
         iBlogService.remove(id);
-        return "redirect:/";
+        return "redirect:/blog";
     }
 
     @GetMapping("/search")
