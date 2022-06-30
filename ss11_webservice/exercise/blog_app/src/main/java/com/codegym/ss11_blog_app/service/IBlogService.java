@@ -18,4 +18,10 @@ public interface IBlogService {
 
     void remove(int id);
 
+    List<Category> categoryList();
+
+    Page<Blog> findAll(Pageable pageable);
+
+    Page<Blog> searchByName(String name, Pageable pageable);
+
 }
