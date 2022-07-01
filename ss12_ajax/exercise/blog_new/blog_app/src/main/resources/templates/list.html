@@ -38,23 +38,20 @@
 
 <div class="p-0 m-0" style="width: 10%; float: left">&nbsp;</div>
 <div class="h-100 p-0 m-0" style="width: 80%; float: left">
-    <table class="table text-center table-striped table-hover bg-white w-100" id="blogList">
+    <table class="table text-center table-striped table-hover bg-white w-100" id="tableEmployee">
         <thead>
         <tr>
             <th colspan="11">
                 <div class="W-100 footer">
                     <a href="blog/create">Thêm mới</a>
-                    <form action="/search">
-                        <label>
-                            <input type="text" name="search" id="searchBlog">
-                        </label>
-                        <button type="submit" id="buttons-search">Tìm kiếm</button>
-                    </form>
+                    <label>
+                        <input type="text" name="name" id="searchBlog">
+                    </label>
+                    <button type="button" onclick="search()">Tìm kiếm</button>
                 </div>
             </th>
         </tr>
         <tr class="w-100">
-            <th>No.</th>
             <th>ID Blog</th>
             <th>Tên Blog</th>
             <th>Nội dung</th>
@@ -65,9 +62,8 @@
             <th>View</th>
         </tr>
         </thead>
-        <tbody id="bodyBlog">
+        <tbody id="bodyTable">
         <tr th:each="blog,loop : ${blogList}">
-            <td th:text="${loop.count}"></td>
             <td th:text="${blog.idBlog}"></td>
             <td th:text="${blog.nameBlog}"></td>
             <td th:text="${blog.content}"></td>
@@ -78,62 +74,86 @@
             <td><a th:href="@{/view/{id}(id=${blog.idBlog})}">Nội dung chi tiết</a></td>
         </tr>
         </tbody>
+        <tr>
+            <td>
+                <button style="background-color: #c69500" class="bi bi-arrow-down" type="button"
+                        th:attr="onclick=|plusTable('${blogList.size()}')|"> Tải thêm
+                </button>
+            </td>
+        </tr>
     </table>
-    <div>
-    <span>
-        <a th:if="${blogList.hasPrevious()}" th:href="@{/blog(page = ${blogList.number - 1})}">Previous</a>
-    </span>
-        <span th:each="pageNo: ${#numbers.sequence(0,blogList.totalPages - 1)}">
-        <a th:href="@{/blog(page = ${pageNo})}" th:text="${pageNo}"></a>
-    </span>
-        <span>
-        <a th:if="${blogList.hasNext()}" th:href="@{/blog(page = ${blogList.number +1})}">Next</a>
-    </span>
-    </div>
 
 </div>
 <div class="p-0 m-0" style="width: 10%; float: left">&nbsp;</div>
 </body>
-
 <script>
-    $(document).ready(function () {
-        $("#buttons-search").on("click", ".searchBlog", function (event) {
-            let search =  document.getElementById('searchBlog').value;
 
-            $ajax({
-                type:"GET",
-                url:`/search/${search}`,
-                success: function (data) {
-                    let content = "";
-                    for (let i = 0; i <data.length ; i++) {
-                        loadDataTable(data);
-                        content = document.getElementById("bodyBlog").innerHTML;
-                    }
-                }
-            })
-            function loadDataTable(item) {
-                let table = `<tr>
-            <td>item.idBlog</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a th:href="@{blog/edit/{id}(id=${blog.idBlog})}">Edit</a></td>
-            <td><a th:href="@{blog/delete/{id}(id=${blog.idBlog})}">Delete</a></td>
-            <td><a th:href="@{/view/{id}(id=${blog.idBlog})}">Nội dung chi tiết</a></td>
-        </tr>`
+    function search() {
+        let newSearch = $('#searchBlog').val();
+        $.ajax({
+            type: "GET",
+            url: `/api/blog/search/${newSearch}`,
+            success: changeTable
+        });
+    }
 
-            }
+    function changeTable(event) {
+        let content = '<tr>\n' +
+            '            <th colspan="11">\n' +
+            '                <div class="W-100 footer">\n' +
+            '                    <a href="blog/create">Thêm mới</a>\n' +
+            '                    <label>\n' +
+            '                        <input type="text" name="name" id="searchBlog">\n' +
+            '                    </label>\n' +
+            '                    <button type="button" onclick="search()">Tìm kiếm</button>\n' +
+            '                </div>\n' +
+            '            </th>\n' +
+            '        </tr>\n' +
+            '        <tr class="w-100">\n' +
+            '            <th>ID Blog</th>\n' +
+            '            <th>Tên Blog</th>\n' +
+            '            <th>Nội dung</th>\n' +
+            '            <th>Ngày tạo</th>\n' +
+            '            <th>Danh mục</th>\n' +
+            '            <th>Edit</th>\n' +
+            '            <th>Delete</th>\n' +
+            '            <th>View</th>\n' +
+            '        </tr>';
+        for (let i = 0; i < event.length; i++) {
+            content += loadDataTable(event[i]);
         }
+        content += `<tr>
+            <td>
+                <button style="background-color: #c69500" class="bi bi-arrow-down" type="button" onclick="plusTable(${event.length})">Tải thêm</button>
+            </td>
+        </tr>`
+        document.getElementById('tableEmployee').innerHTML = content;
+    }
 
+    function loadDataTable(item) {
+        return '<tr>' +
+            ' <td>' + item.idBlog + '</td>' +
+            ' <td>' + item.nameBlog + '</td>' +
+            ' <td>' + item.content + '</td>' +
+            ' <td>' + item.createday + '</td>' +
+            ' <td>' + item.category.nameCategory + '</td>' +
+            '<td><a href="/edit/' + item.idBlog + ' ">Edit</a></td>' +
+            '<td><a href="/delete/' + item.idBlog + ' ">Delete</a></td>' +
+            '<td><a href="/view/' + item.idBlog + ' ">Nội dung chi tiết</a></td>'
+        '</tr>';
 
-    })
+    }
+
+    function plusTable(size) {
+        $.ajax({
+            type: "GET",
+            url: `/api/blog/display/${size}`,
+            success: changeTable
+        })
+    }
 
 </script>
 
-<script th:src="@{resources/static/bootstrap/jquery/jquery-3.5.1.min.js}"></script>
-<script th:src="@{resources/static/datatables/js/jquery.dataTables.min.js}"></script>
-<script th:src="@{resources/static/bootstrap/datatables/js/dataTables.bootstrap4.min.js}"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -143,7 +163,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-<script th:src="@{resources/static/bootstrap/bootstrap413/js/bootstrap.bundle.js}"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 <script>
     var id;

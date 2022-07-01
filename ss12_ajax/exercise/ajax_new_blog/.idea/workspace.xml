@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3c3315e8-658d-4f2e-b495-46dcfda01c57" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../casestudy/design_furama/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/design_furama/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/controller/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/controller/customer/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/controller/customer/CustomerTypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/controller/customer/CustomerTypeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/model/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/model/customer/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/model/employee/Division.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/model/employee/Division.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/model/employee/EducationDegree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/model/employee/EducationDegree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/model/employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/model/employee/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/model/employee/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/model/employee/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/model/userRole/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/model/userRole/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/model/userRole/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/model/userRole/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/service/customer/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/service/customer/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/service/customer/imp/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/java/com/codegym/furama/service/customer/imp/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/resources/templates/customer/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/resources/templates/customer/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/resources/templates/customer/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/resources/templates/customer/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/resources/templates/customer/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/resources/templates/customer/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/resources/templates/customerType/createType.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/resources/templates/customerType/createType.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/resources/templates/customerType/editType.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/resources/templates/customerType/editType.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/resources/templates/customerType/listType.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/design_furama/src/main/resources/templates/customerType/listType.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_session_cookie/exercise/build_cart_flower/src/main/resources/templates/order-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_session_cookie/exercise/build_cart_flower/src/main/resources/templates/order-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_session_cookie/exercise/build_cart_flower/src/main/resources/templates/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_session_cookie/exercise/build_cart_flower/src/main/resources/templates/shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_session_cookie/exercise/build_cart_flower/src/main/resources/templates/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_session_cookie/exercise/build_cart_flower/src/main/resources/templates/view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11_webservice/exercise/blog_app/src/main/java/com/codegym/ss11_blog_app/service/imp/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_webservice/exercise/blog_app/src/main/java/com/codegym/ss11_blog_app/service/imp/BlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11_webservice/practice/spring-customer-management-restful" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_webservice/practice/spring-customer-management-restful" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ajax_blog_app/blog_app/src/main/java/com/codegym/ss7_blog_app/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ajax_blog_app/blog_app/src/main/java/com/codegym/ss7_blog_app/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ajax_blog_app/blog_app/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ajax_blog_app/blog_app/src/main/resources/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6_jpa/exercise/build_blog_app/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6_jpa/exercise/build_blog_app/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6_jpa/exercise/build_blog_app/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6_jpa/exercise/build_blog_app/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6_jpa/exercise/build_blog_app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6_jpa/exercise/build_blog_app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss7_spring_data_jpa/exercise/blog_app/src/main/java/com/codegym/ss7_blog_app/service/ICategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss7_spring_data_jpa/exercise/blog_app/src/main/java/com/codegym/ss7_blog_app/service/ICategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss9_aop_exception/library_app/src/main/java/com/codegym/library/ulti/BookAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_aop_exception/library_app/src/main/java/com/codegym/library/ulti/BookAspect.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2BK8jwpgGL4QWdNPG7koYe7G9yC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ss11_webservice/exercise" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c3315e8-658d-4f2e-b495-46dcfda01c57" name="Default Changelist" comment="" />
+      <created>1656643554645</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656643554645</updated>
+      <workItem from="1656643555960" duration="123000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="207" key="FileChooserDialogImpl" timestamp="1656643587301">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="549" y="207" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1656643587301" />
+  </component>
+</project>

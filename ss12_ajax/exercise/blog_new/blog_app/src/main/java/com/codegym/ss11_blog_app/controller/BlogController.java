@@ -1,18 +1,14 @@
-package com.codegym.ss7_blog_app.controller;
+package com.codegym.ss11_blog_app.controller;
 
-import com.codegym.ss7_blog_app.model.Blog;
-import com.codegym.ss7_blog_app.model.Category;
-import com.codegym.ss7_blog_app.service.IBlogService;
-import com.codegym.ss7_blog_app.service.ICategoryService;
+import com.codegym.ss11_blog_app.model.Blog;
+import com.codegym.ss11_blog_app.model.Category;
+import com.codegym.ss11_blog_app.service.IBlogService;
+import com.codegym.ss11_blog_app.service.ICategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.*;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
-
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -23,11 +19,12 @@ public class BlogController {
     @Autowired
     private ICategoryService iCategoryService;
 
-    @GetMapping()
-    public String home(@RequestParam(name = "page", defaultValue = "0") int page, Model model) {
-        Sort sort = Sort.by("create_day");
-        Page<Blog> list = iBlogService.findAll(PageRequest.of(page, 1, sort));
-        model.addAttribute("blogList", list);
+    @GetMapping("")
+    public String home( Model model) {
+        List<Blog> blogList = iBlogService.findAll();
+        List<Blog> blogs = new ArrayList<>();
+        blogs.add(blogList.get(0));
+        model.addAttribute("blogList", blogs);
         return "/list";
     }
 
@@ -72,8 +69,8 @@ public class BlogController {
     }
 
     @GetMapping("/search")
-    public String search(@RequestParam(name = "name") String name, @RequestParam(name = "page", defaultValue = "0") int page, Model model) {
-        Page<Blog> list = iBlogService.searchByName(name, PageRequest.of(page, 1));
+    public String search(@RequestParam(name = "name") String name, Model model) {
+        List<Blog> list = iBlogService.searchByName(name);
         model.addAttribute("blogList", list);
         return "list";
     }
