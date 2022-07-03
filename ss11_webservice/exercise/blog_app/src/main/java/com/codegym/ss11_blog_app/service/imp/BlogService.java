@@ -47,4 +47,19 @@ public class BlogService implements IBlogService {
         iBlogRepository.remove(id);
     }
 
+    @Override
+    public List<Category> categoryList() {
+        return null;
+    }
+
+    @Override
+    public Page<Blog> findAll(Pageable pageable) {
+        return null;
+    }
+
+    @Override
+    public Page<Blog> searchByName(String name, Pageable pageable) {
+        return null;
+    }
+
 }

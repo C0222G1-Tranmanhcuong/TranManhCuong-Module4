@@ -18,9 +18,9 @@ public class Customer {
     private String email;
     private String address;
     @Column(name = "delete_status")
-    private int deleteStatus;
+    private Integer deleteStatus = 0;
     @ManyToOne
-    @JoinColumn(name = "id_customer_type")
+    @JoinColumn(name = "id_customer_type", referencedColumnName = "id_customer_type")
     private CustomerType customerType;
 
     public Customer() {

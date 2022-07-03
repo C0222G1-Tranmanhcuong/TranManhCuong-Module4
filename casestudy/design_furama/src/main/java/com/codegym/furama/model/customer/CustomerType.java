@@ -1,5 +1,7 @@
 package com.codegym.furama.model.customer;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 import java.util.Set;
 
@@ -11,7 +13,7 @@ public class CustomerType {
     private Integer idType;
     @Column(name = "name_customer_type")
     private String nameCustomerType;
-    @OneToMany(mappedBy = "customerType")
+    @OneToMany(mappedBy = "customerType",cascade = CascadeType.ALL)
     private Set<Customer>customers;
 
     public CustomerType() {

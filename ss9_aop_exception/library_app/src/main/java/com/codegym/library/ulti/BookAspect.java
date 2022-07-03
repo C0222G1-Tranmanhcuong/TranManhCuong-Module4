@@ -16,7 +16,7 @@ public class BookAspect {
     @After("execution(* com.codegym.library.controller.LibraryController.*(..))")
     public void logAfterMethodController(JoinPoint joinPoint) {
         String nameMethod = joinPoint.getSignature().getName();
-        logger.info("Tên phương thức được sử dụng là" + nameMethod);
+        logger.info("Tên phương thức được sử dụng là " + nameMethod);
     }
 
 }

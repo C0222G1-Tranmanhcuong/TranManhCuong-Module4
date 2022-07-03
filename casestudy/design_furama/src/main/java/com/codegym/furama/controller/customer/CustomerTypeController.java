@@ -52,13 +52,7 @@ public class CustomerTypeController {
         return "redirect:/customerType";
     }
 
-    //    @GetMapping("/{id}/delete")
-//    public String delete(@PathVariable Integer id){
-//        Optional<CustomerType> customerType = iCustomerTypeService.findById(id);
-//        iCustomerTypeService.remove(customerType.get());
-//        return "redirect:/customerType";
-//    }
-    @GetMapping("/delete")
+    @GetMapping("/delete/{id}")
     public String delete(@PathVariable("id") String id) {
         iCustomerTypeService.delete(Integer.parseInt(id));
         return "redirect:/customerType";
