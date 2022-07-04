@@ -1,6 +1,7 @@
-package com.codegym.furama.repository.customer;
+package com.codegym.furama.repository.empolyee;
 
 import com.codegym.furama.model.customer.Customer;
+import com.codegym.furama.model.employee.Employee;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -8,14 +9,12 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import javax.transaction.Transactional;
+public interface IEmployeeRepository extends JpaRepository<Employee, Integer> {
 
-@Transactional
-public interface ICustomerRepository extends JpaRepository<Customer, Integer> {
-    @Query(value = "SELECT * FROM customer WHERE delete_status = 0", nativeQuery = true)
-    Page<Customer> findAll (Pageable p);
+    @Query(value = "SELECT * FROM employee WHERE status_delete = 0", nativeQuery = true)
+    Page<Employee> findAll (Pageable p);
 
     @Modifying
-    @Query(value = "update customer set delete_status = 1 where id = :id ", nativeQuery = true)
+    @Query(value = "update employee set status_delete = 1 where employee_id = :id ", nativeQuery = true)
     void delete(@Param("id") int id);
 }

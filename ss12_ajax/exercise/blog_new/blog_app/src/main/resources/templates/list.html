@@ -50,6 +50,7 @@
                     <button type="button" onclick="search()">Tìm kiếm</button>
                 </div>
             </th>
+            <a th:if="${#request.userPrincipal != null}" th:href="@{/logout}">Logout</a>
         </tr>
         <tr class="w-100">
             <th>ID Blog</th>
